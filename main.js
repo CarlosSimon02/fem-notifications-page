@@ -1,10 +1,10 @@
 (function () {
   const unreadNotifItemClassName = "content__list__item--unread-notification";
   const notifItemClassName = "content__list__item";
-  const unreadNotifsCount = document.querySelector(
-    ".content__top__title__unread-notif-count"
-  );
+
+  const unreadNotifsCount = document.querySelector(".content__top__title__unread-notif-count");
   const links = document.querySelectorAll(".link");
+  const markAllAsReadLink = document. querySelector(".content__top__mark-all-as-read");
 
   const displayUnreadNotifsCount = function () {
     unreadNotifsItems = document.querySelectorAll(
@@ -27,7 +27,12 @@
     }
   };
 
+  const markAllAsRead = function () {
+
+  }
+
   document.addEventListener("DOMContentLoaded", displayUnreadNotifsCount);
+  markAllAsReadLink.addEventListener("click", markAllAsRead);
   links.forEach((link) => {
     link.addEventListener("click", removeNotifItemFromUnread);
   });
