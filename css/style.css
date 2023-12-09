@@ -75,7 +75,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
   color: var(--clr-fg-2);
 }
 
@@ -221,7 +225,6 @@ main {
 }
 
 .content__list__item__text-area__message {
-  cursor: pointer;
   margin-top: clamp(0.75rem, 0.444vw + 0.618rem, 0.813rem);
   border: 0.0625rem solid var(--clr-border);
   border-radius: 0.3125rem;
@@ -232,6 +235,7 @@ main {
 
 .content__list__item__text-area__message:hover {
   background-color: var(--clr-bg-message-hover);
+  color: inherit;
 }
 
 /* attribution */
