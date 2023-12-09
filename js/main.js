@@ -37,6 +37,7 @@
     unreadNotifItems.forEach((item) => {
       item.classList.remove(unreadNotifItemClassName);
     });
+    displayunreadNotifCount();
   };
 
   const hideAttribution = function () {
