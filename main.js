@@ -1,16 +1,18 @@
 (function () {
-  const unreadNotifItemClassName = "content__list__item--unread-notification";
-  const notifItemClassName = "content__list__item";
+  const unreadNotifItemClassName = "js-unread-notif-item";
+  const notifItemClassName = "js-notif-item";
 
-  const unreadNotifsCount = document.querySelector(".content__top__title__unread-notif-count");
-  const links = document.querySelectorAll(".link");
-  const markAllAsReadLink = document. querySelector(".content__top__mark-all-as-read");
+  const unreadNotifCount = document.querySelector(".js-unread-notif-count");
+  const links = document.querySelectorAll(".js-link");
+  const markAllAsReadLink = document.querySelector(".js-mark-all-as-read");
 
-  const displayUnreadNotifsCount = function () {
-    unreadNotifsItems = document.querySelectorAll(
-      `.${unreadNotifItemClassName}`
-    );
-    unreadNotifsCount.innerHTML = unreadNotifsItems.length;
+  const getUnreadNotifItems = function () {
+    return document.querySelectorAll(`.${unreadNotifItemClassName}`);
+  };
+
+  const displayunreadNotifCount = function () {
+    const unreadNotifItems = getUnreadNotifItems();
+    unreadNotifCount.innerHTML = unreadNotifItems.length;
   };
 
   const removeNotifItemFromUnread = function () {
@@ -19,7 +21,7 @@
     while (ancestorItem !== null) {
       if (ancestorItem.classList.contains(notifItemClassName)) {
         ancestorItem.classList.remove(unreadNotifItemClassName);
-        displayUnreadNotifsCount();
+        displayunreadNotifCount();
         break;
       }
       ancestorItem = ancestorItem.parentNode;
@@ -28,11 +30,15 @@
   };
 
   const markAllAsRead = function () {
+    const unreadNotifItems = getUnreadNotifItems();
+    unreadNotifItems.forEach((item) => {
+      item.classList.remove(unreadNotifItemClassName);
+    });
+  };
 
-  }
-
-  document.addEventListener("DOMContentLoaded", displayUnreadNotifsCount);
+  document.addEventListener("DOMContentLoaded", displayunreadNotifCount);
   markAllAsReadLink.addEventListener("click", markAllAsRead);
+
   links.forEach((link) => {
     link.addEventListener("click", removeNotifItemFromUnread);
   });

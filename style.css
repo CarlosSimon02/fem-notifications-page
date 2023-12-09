@@ -96,6 +96,20 @@ a:hover {
   border-radius: 100%;
 }
 
+.js-unread-notif-item {
+  background-color: var(--clr-bg-notif-item-unread);
+}
+
+.js-unread-notif-item .content__list__item__text-area__notification::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--clr-notif-indicator);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  margin-left: 0.25rem;
+}
+
 /* layout */
 body {
   background-color: var(--clr-bg-body);
@@ -174,10 +188,6 @@ main {
   border-radius: 0.5rem;
 }
 
-.content__list__item--unread-notification {
-  background-color: var(--clr-bg-notif-item-unread);
-}
-
 .content__list__item__profile-pic,
 .content__list__item__pic-from-post img {
   width: clamp(2.438rem, 2.667vw + 1.646rem, 2.813rem);
@@ -190,17 +200,6 @@ main {
 
 .content__list__item__text-area__notification {
   margin-bottom: 0.1875rem;
-}
-
-.content__list__item--unread-notification
-  .content__list__item__text-area__notification::after {
-  content: "";
-  display: inline-block;
-  background-color: var(--clr-notif-indicator);
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 100%;
-  margin-left: 0.25rem;
 }
 
 .content__list__item__text-area__time {
