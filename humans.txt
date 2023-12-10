@@ -1,0 +1,23 @@
+/* MYSELF */
+Coder: Carlos Simon Camacho
+Contact: csmc0519@gmail.com
+Twitter: @v
+GitHub: https://github.com/vanzasetia
+From: Bandar Lampung, Lampung, Indonesia
+
+/* THANKS */
+UI Design: Frontend Mentor
+Website: https://www.frontendmentor.io/
+Twitter: @frontendmentor
+Location: London, England, United Kingdom
+
+Founder of Frontend Mentor: Matt Studdert
+Website: http://mattstuddert.com/
+Twitter: @_mattstuddert
+From: London, England, United Kingdom
+
+/* SITE */
+Last update: 2023/01/04
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code, Windows Terminal, PowerShell
