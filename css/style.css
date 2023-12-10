@@ -273,4 +273,5 @@ main {
   left: 0;
   transition: bottom .8s ease;
   box-shadow: var(--bx-shadow-main);
+  visibility: hidden;
 }

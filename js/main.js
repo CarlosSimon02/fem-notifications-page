@@ -43,9 +43,11 @@
   const hideAttribution = function () {
     attr.style.bottom = "-5rem";
     attrBtn.disabled = false;
+    setTimeout(()=>{attr.style.visibility = "hidden"},800);
   };
 
   const showAttribution = function () {
+    attr.style.visibility = "visible";
     attr.style.bottom = 0;
     attrBtn.disabled = true;
     setTimeout(hideAttribution, 3000);
