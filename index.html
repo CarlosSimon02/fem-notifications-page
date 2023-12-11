@@ -73,23 +73,23 @@
     />
     <!-- end fonts -->
 
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="canonical" href="mywebsite.com" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link
       rel="author"
       href="https://officialdevfinder.netlify.app/humans.txt"
     />
-    <script src="js/main.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <main>
       <article class="content">
         <div class="content__top">
           <h1 class="content__top__title extra-bold very-dark-grey-blue">
-            Notifications<span class="content__top__title__unread-notif-count js-unread-notif-count"
-              ></span
-            >
+            Notifications<span
+              class="content__top__title__unread-notif-count js-unread-notif-count"
+            ></span>
           </h1>
           <a
             class="content__top__mark-all-as-read dark-grey-blue js-mark-all-as-read"
@@ -100,9 +100,7 @@
           >
         </div>
         <ul class="content__list">
-          <li
-            class="content__list__item js-notif-item js-unread-notif-item"
-          >
+          <li class="content__list__item js-notif-item js-unread-notif-item">
             <img
               class="content__list__item__profile-pic"
               src="/assets/images/avatar-mark-webber.webp"
@@ -129,9 +127,7 @@
               <p class="content__list__item__text-area__time">1m ago</p>
             </div>
           </li>
-          <li
-            class="content__list__item js-notif-item js-unread-notif-item"
-          >
+          <li class="content__list__item js-notif-item js-unread-notif-item">
             <img
               class="content__list__item__profile-pic"
               src="/assets/images/avatar-angela-gray.webp"
@@ -151,9 +147,7 @@
               <p class="content__list__item__text-area__time">5m ago</p>
             </div>
           </li>
-          <li
-            class="content__list__item js-notif-item js-unread-notif-item"
-          >
+          <li class="content__list__item js-notif-item js-unread-notif-item">
             <img
               class="content__list__item__profile-pic"
               src="/assets/images/avatar-jacob-thompson.webp"
@@ -294,12 +288,44 @@
         </ul>
       </article>
     </main>
-    <!-- 
-    <div class="attribution">
+    <button class="attribution-btn js-attribution-btn" aria-label="Attribution button">
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg
+        fill="#000000"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32px"
+        height="32px"
+        viewBox="0 0 52 52"
+        enable-background="new 0 0 52 52"
+        xml:space="preserve"
+      >
+        <g>
+          <path
+            d="M26.7,42.8c0.8,0,1.5,0.7,1.5,1.5v3.2c0,0.8-0.7,1.5-1.5,1.5h-3.2c-0.8,0-1.5-0.7-1.5-1.5v-3.2
+		c0-0.8,0.7-1.5,1.5-1.5H26.7z"
+          />
+          <path
+            d="M28.2,35.1c0-2.1,1.3-4,3.1-4.8h0.1c5.2-2.1,8.8-7.2,8.8-13.2c0-7.8-6.4-14.2-14.2-14.2
+		c-7.2,0-13.2,5.3-14.2,12.2v0.1c-0.1,0.9,0.6,1.6,1.5,1.6h3.2c0.8,0,1.4-0.5,1.5-1.1v-0.2c0.7-3.7,4-6.5,7.9-6.5
+		c4.5,0,8.1,3.6,8.1,8.1c0,2.1-0.8,4-2.1,5.5l-0.1,0.1c-0.9,1-2.1,1.6-3.3,2c-4,1.4-6.7,5.2-6.7,9.4v1.5c0,0.8,0.6,1.4,1.4,1.4h3.2
+		c0.8,0,1.6-0.6,1.6-1.5L28.2,35.1z"
+          />
+        </g>
+      </svg>
+    </button>
+    <div class="attribution js-attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        class="extra-bold very-dark-grey-blue"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by
+      <a
+        class="extra-bold very-dark-grey-blue"
+        href="https://github.com/CarlosSimon02"
+        >@CarlosSimon02</a
+      >.
+    </div>
   </body>
 </html>

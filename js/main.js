@@ -1,11 +1,13 @@
 (function () {
-  'use strict';
+  "use strict";
   const unreadNotifItemClassName = "js-unread-notif-item";
   const notifItemClassName = "js-notif-item";
 
   const unreadNotifCount = document.querySelector(".js-unread-notif-count");
   const links = document.querySelectorAll(".js-link");
   const markAllAsReadLink = document.querySelector(".js-mark-all-as-read");
+  const attrBtn = document.querySelector(".js-attribution-btn");
+  const attr = document.querySelector(".js-attribution");
 
   const getUnreadNotifItems = function () {
     return document.querySelectorAll(`.${unreadNotifItemClassName}`);
@@ -37,8 +39,20 @@
     });
   };
 
+  const hideAttribution = function () {
+    attr.style.bottom = "-5rem";
+    attrBtn.disabled = false;
+  };
+
+  const showAttribution = function () {
+    attr.style.bottom = 0;
+    attrBtn.disabled = true;
+    setTimeout(hideAttribution, 3000);
+  };
+
   document.addEventListener("DOMContentLoaded", displayunreadNotifCount);
   markAllAsReadLink.addEventListener("click", markAllAsRead);
+  attrBtn.addEventListener("click", showAttribution);
 
   links.forEach((link) => {
     link.addEventListener("click", removeNotifItemFromUnread);

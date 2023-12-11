@@ -194,6 +194,10 @@ main {
   height: clamp(2.438rem, 2.667vw + 1.646rem, 2.813rem);
 }
 
+.content__list__item__pic-from-post {
+  width: fit-content;
+}
+
 .content__list__item__text-area {
   width: 100%;
 }
@@ -218,4 +222,44 @@ main {
 
 .content__list__item__text-area__message:hover {
   background-color: var(--clr-bg-message-hover);
+}
+
+/* attribution */
+.attribution-btn {
+  cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--clr-fg-2);
+  box-shadow: var(--bx-shadow-main);
+}
+
+.attribution-btn:hover {
+  background-color: var(--clr-fg-1);
+}
+
+.attribution-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--clr-bg-content);
+}
+
+.attribution {
+  color: var(--clr-fg-3);
+  font-size: clamp(0.875rem, 0.889vw + 0.611rem, 1rem);
+  width: 100%;
+  background-color: var(--clr-bg-content);
+  padding: .7rem;
+  text-align: center;
+  position: fixed;
+  bottom: -5rem;
+  transition: bottom .8s ease;
+  box-shadow: var(--bx-shadow-main);
 }
