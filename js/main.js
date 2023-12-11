@@ -1,4 +1,5 @@
 (function () {
+  'use strict';
   const unreadNotifItemClassName = "js-unread-notif-item";
   const notifItemClassName = "js-notif-item";
 
