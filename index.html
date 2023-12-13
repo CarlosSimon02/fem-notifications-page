@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,18 @@
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
 
-    <title>FEM Notifications Page</title>
+    <title>FEM Notifications Page</title>    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="canonical" href="mywebsite.com" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link
+      rel="author"
+      href="https://officialdevfinder.netlify.app/humans.txt"
+    />
+    <script>
+      document.querySelector("html").removeAttribute("class");
+    </script>
+    <script src="js/main.min.js" defer></script>
 
     <!-- favicons -->
     <link
@@ -72,17 +83,14 @@
       rel="stylesheet"
     />
     <!-- end fonts -->
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="canonical" href="mywebsite.com" />
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    <link
-      rel="author"
-      href="https://officialdevfinder.netlify.app/humans.txt"
-    />
-    <script src="js/main.js" defer></script>
   </head>
   <body>
+    <noscript>
+      <p>
+        JavaScript is disabled in your browser. Please enable it to experience
+        the full functionality of this site.
+      </p>
+    </noscript>
     <main>
       <article class="content">
         <div class="content__top">
@@ -287,8 +295,10 @@
           </li>
         </ul>
       </article>
-    </main>
-    <button class="attribution-btn js-attribution-btn" aria-label="Attribution button">
+      <button
+      class="attribution-btn js-attribution-btn"
+      aria-label="Attribution button"
+    >
       <?xml version="1.0" encoding="utf-8"?>
       <svg
         fill="#000000"
@@ -327,5 +337,6 @@
         >@CarlosSimon02</a
       >.
     </div>
+    </main>
   </body>
 </html>
