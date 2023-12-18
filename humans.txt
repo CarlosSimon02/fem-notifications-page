@@ -1,9 +1,9 @@
 /* MYSELF */
 Coder: Carlos Simon Camacho
 Contact: csmc0519@gmail.com
-Twitter: @v
-GitHub: https://github.com/vanzasetia
-From: Bandar Lampung, Lampung, Indonesia
+Twitter: @CarlosSimonCam1
+GitHub: https://github.com/CarlosSimon02
+From: Philippines
 
 /* THANKS */
 UI Design: Frontend Mentor
